@@ -1,20 +1,18 @@
 package BO;
 
 public class LivroBO {
+    
+    Verificador teste = new Verificador();
 
 	public static boolean validaString(String string){
-		if(string == ""){
-			System.out.println("O campo não pode ficar em branco!");
-			return false;
-		}else
-			return true;
+		teste.verificarString(string);
 	}
 	
 	public static boolean validaAnoDeEdicao(int anoDeEdicao){
 		if(anoDeEdicao  < 2015){
 			return true;
 		}else
-			System.out.println("Ano de edição inválido!!");
+			System.out.println("Ano de ediï¿½ï¿½o invï¿½lido!!");
 			return false;
 	}
 	
@@ -22,7 +20,7 @@ public class LivroBO {
 		if(qtdNaEstatne  > 0 ){
 			return true;
 		}else
-			System.out.println("Dado inválido(menor que 1)!");
+			System.out.println("Dado invï¿½lido(menor que 1)!");
 			return false;
 	}
 	
